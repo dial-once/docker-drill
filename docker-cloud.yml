@@ -1,0 +1,18 @@
+drill:
+  image: 'dialonce/drill:latest'
+  deployment_strategy: high_availability
+  links:
+    - zookeeper
+  ports:
+    - '8047:8047'
+  sequential_deployment: true
+  tags:
+    - analytics
+  target_num_containers: 2
+  volumes:
+    - '/data:/data'
+
+zookeeper:
+  image: 'jplock/zookeeper:latest'
+  tags:
+    - analytics

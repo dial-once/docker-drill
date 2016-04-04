@@ -1,0 +1,7 @@
+drill.exec: {
+  cluster-id: "drill-analysis",
+  zk.connect: "{{ .Env.ZOOKEEPER_PORT_2181_TCP_ADDR }}:{{ .Env.ZOOKEEPER_PORT_2181_TCP_PORT }}",
+  debug.error_on_leak: false,
+  buffer.size: 6,
+  functions: ["org.apache.drill.expr.fn.impl", "org.apache.drill.udfs"]
+}

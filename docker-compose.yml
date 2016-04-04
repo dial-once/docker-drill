@@ -1,0 +1,12 @@
+drill:
+  #image: 'dialonce/drill:latest'
+  build: .
+  ports:
+    - '8047:8047'
+  links:
+    - zookeeper
+  volumes:
+    -  '/data:/data'
+
+zookeeper:
+  image: jplock/zookeeper
