@@ -1,5 +1,7 @@
 # Apache Drill Docker container
 
+[![Circle CI](https://circleci.com/gh/dial-once/docker-drill.svg?style=shield)](https://circleci.com/gh/dial-once/docker-drill) [![Docker Stars](https://img.shields.io/docker/stars/dialonce/drill.svg?maxAge=2592000)](https://hub.docker.com/r/dialonce/drill/) [![Docker Pulls](https://img.shields.io/docker/pulls/dialonce/drill.svg?maxAge=2592000)](https://hub.docker.com/r/dialonce/drill/) [![ImageLayers Size](https://img.shields.io/imagelayers/image-size/dialonce/drill/latest.svg?maxAge=2592000?style=plastic)](https://imagelayers.io/?images=dialonce%2Fdrill:latest) [![ImageLayers Layers](https://img.shields.io/imagelayers/layers/dialonce/drill/latest.svg?maxAge=2592000?style=plastic)](https://imagelayers.io/?images=dialonce%2Fdrill:latest)
+
 A single node [Apache Drill](http://drill.apache.org/) container, to quick start and learn Drill.
 
 ## Build the container
