@@ -5,6 +5,9 @@ VERSION ?= latest
 build:
 	docker build -t $(NAMESPACE)/$(IMAGE) .
 
+debug:
+	docker run -it $(NAMESPACE)/$(IMAGE) sh
+
 run:
 	docker run -it $(NAMESPACE)/$(IMAGE)
 
