@@ -13,7 +13,7 @@ RUN apk update \
   && mkdir -p /opt/drill \
   && wget -O - https://github.com/jwilder/dockerize/releases/download/v${DOCKERIZE_VERSION}/dockerize-linux-amd64-v${DOCKERIZE_VERSION}.tar.gz | tar -xzf - -C /usr/local/bin \
   && wget -O - https://www.apache.org/dist/drill/drill-${DRILL_VERSION}/apache-drill-${DRILL_VERSION}.tar.gz | tar -xzf - --strip=1 -C /opt/drill \
-  && apk del ca-certificates wget tar
+  && apk del wget tar
 
 COPY ./drill-override.conf.tmpl /opt/drill/conf/drill-override.conf.tmpl
 
