@@ -2,7 +2,7 @@ FROM java:7-alpine
 
 MAINTAINER Julien Kernec'h <docker@dial-once.com>
 
-ENV DRILL_VERSION=1.6.0
+ENV DRILL_VERSION=1.9.0
 ENV DOCKERIZE_VERSION=0.2.0
 
 # Update base packages and install dev packages
